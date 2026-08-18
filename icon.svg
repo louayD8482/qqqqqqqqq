@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b" />
+      <stop offset="50%" stop-color="#022c22" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background rounded app icon -->
+  <rect width="512" height="512" rx="115" fill="url(#bgGrad)" />
+  <rect width="504" height="504" x="4" y="4" rx="111" fill="none" stroke="rgba(250, 204, 21, 0.25)" stroke-width="6" />
+
+  <!-- Circular Tasbeeh Bead Ring -->
+  <circle cx="256" cy="256" r="160" fill="none" stroke="rgba(16, 185, 129, 0.2)" stroke-width="4" stroke-dasharray="8 8" />
+
+  <!-- 33 Beads in a Ring -->
+  <g fill="url(#goldGrad)">
+    <!-- Top Master Bead -->
+    <circle cx="256" cy="96" r="18" />
+    <circle cx="286" cy="99" r="10" />
+    <circle cx="315" cy="107" r="10" />
+    <circle cx="343" cy="120" r="10" />
+    <circle cx="368" cy="138" r="10" />
+    <circle cx="389" cy="160" r="10" />
+    <circle cx="404" cy="186" r="10" />
+    <circle cx="413" cy="214" r="10" />
+    <circle cx="416" cy="244" r="10" />
+    <circle cx="412" cy="274" r="10" />
+    <!-- Separator Bead 1 -->
+    <circle cx="401" cy="302" r="14" fill="#34d399" />
+    <circle cx="384" cy="328" r="10" />
+    <circle cx="361" cy="350" r="10" />
+    <circle cx="335" cy="369" r="10" />
+    <circle cx="306" cy="382" r="10" />
+    <circle cx="275" cy="390" r="10" />
+    <circle cx="243" cy="391" r="10" />
+    <circle cx="212" cy="385" r="10" />
+    <circle cx="182" cy="374" r="10" />
+    <circle cx="155" cy="357" r="10" />
+    <circle cx="132" cy="336" r="10" />
+    <!-- Separator Bead 2 -->
+    <circle cx="115" cy="311" r="14" fill="#34d399" />
+    <circle cx="102" cy="284" r="10" />
+    <circle cx="96" cy="254" r="10" />
+    <circle cx="96" cy="224" r="10" />
+    <circle cx="103" cy="195" r="10" />
+    <circle cx="116" cy="167" r="10" />
+    <circle cx="134" cy="143" r="10" />
+    <circle cx="157" cy="123" r="10" />
+    <circle cx="183" cy="109" r="10" />
+    <circle cx="211" cy="100" r="10" />
+    <circle cx="239" cy="96" r="10" />
+  </g>
+
+  <!-- Center Arabic "س" Calligraphy -->
+  <text x="256" y="295" font-family="'Amiri', 'Traditional Arabic', serif" font-size="140" font-weight="bold" fill="url(#goldGrad)" text-anchor="middle">س</text>
+  
+  <!-- Subtle Moon Crescent -->
+  <path d="M 270 190 A 24 24 0 0 0 294 166 A 28 28 0 1 1 270 190 Z" fill="#facc15" opacity="0.9" />
+</svg>
