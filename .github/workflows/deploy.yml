@@ -30,8 +30,8 @@ jobs:
       - name: Add Android Platform & Sync
         run: |
           bun add @capacitor/android
-          npx cap add android
-          npx cap sync android
+          bun x cap add android
+          bun x cap sync android
 
       - name: Build Android APK
         run: |
