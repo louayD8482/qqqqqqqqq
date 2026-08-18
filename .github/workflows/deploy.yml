@@ -27,8 +27,9 @@ jobs:
       - name: Build Web App
         run: bun run build
 
-      - name: Add Android Platform & Sync
+      - name: Install Capacitor CLI & Android
         run: |
+          bun add -D @capacitor/cli
           bun add @capacitor/android
           bun x cap add android
           bun x cap sync android
