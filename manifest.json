@@ -1,0 +1,24 @@
+{
+  "name": "نور الإسلام | Noor Al-Islam - رفيقك الروحي الشامل",
+  "short_name": "نور الإسلام",
+  "description": "تطبيق إسلامي شامل يضم القرآن الكريم، مواقيت الصلاة، الأذكار، مسبحة إلكترونية ذكية، الأحاديث الشريفة والمساعد الشرعي الذكي.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b101d",
+  "theme_color": "#0b101d",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/subha_icon.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

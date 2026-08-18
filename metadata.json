@@ -1,0 +1,6 @@
+{
+  "name": "سبحة - نور الإسلام",
+  "description": "سبحة إلكترونية ذكية وفائقة السلاسة للتسبيح والأذكار مع عداد لمسي تفاعلي، تنبيهات اهتزازية وصوتية، وتتبع إجمالي التسبيحات اليومية.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

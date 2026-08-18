@@ -1,0 +1,39 @@
+{
+  "appId": "com.nouralislam.subha",
+  "appName": "سبحة نور الإسلام",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "backgroundColor": "#090d16",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 1500,
+      "launchAutoHide": true,
+      "backgroundColor": "#090d16",
+      "androidSplashResourceName": "splash",
+      "androidScaleType": "CENTER_CROP",
+      "showSpinner": false
+    },
+    "StatusBar": {
+      "style": "DARK",
+      "backgroundColor": "#090d16",
+      "overlaysWebView": false
+    },
+    "LocalNotifications": {
+      "smallIcon": "ic_stat_icon_config_sample",
+      "iconColor": "#f59e0b",
+      "sound": "beep.wav"
+    }
+  },
+  "android": {
+    "backgroundColor": "#090d16",
+    "allowMixedContent": true,
+    "captureInput": true,
+    "webContentsDebuggingEnabled": false
+  },
+  "ios": {
+    "backgroundColor": "#090d16",
+    "contentInset": "automatic",
+    "scrollEnabled": false,
+    "preferredContentMode": "mobile"
+  }
+}

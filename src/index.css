@@ -1,0 +1,172 @@
+@import "tailwindcss";
+
+/* منع مشاكل التحديد واللمس والتحجيم العشوائي على الموبايل */
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent; /* إزالة المربع الرمادي عند اللمس */
+  -webkit-touch-callout: none; /* منع ظهور قائمة الخيارات المطولة عند الضغط المستمر */
+}
+
+/* التأكد من أن الحاوية الرئيسية تأخذ قياسات الشاشة بدقة مع منع تضخم الخطوط على أندرويد */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* لمنع التحرك الأفقي */
+  font-family: 'Tajawal', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  overscroll-behavior: none;
+  -webkit-text-size-adjust: 100%; /* منع التكبير العشوائي للخطوط في أندرويد كروم وسفاري */
+  text-size-adjust: 100%;
+}
+
+/* Responsive Mobile Container: 430px standard iPhone/Android shell */
+.mobile-app-shell {
+  width: 100%;
+  max-width: 430px;
+  min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* تنسيق حاوية الهدية لضمان عدم تغطيتها لعناصر أخرى بشكل خاطئ */
+.gift-container {
+  position: fixed;
+  bottom: max(env(safe-area-inset-bottom), 20px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 92%;
+  max-width: 420px;
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  z-index: 9999; /* ضمان ظهورها فوق كل العناصر لكي تستجيب للضغط بدقة */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.dark .gift-container {
+  background: #1c1917;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.gift-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.gift-buttons {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.gift-buttons button {
+  flex: 1;
+  padding: 11px 16px;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.15s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.gift-buttons button:active {
+  transform: scale(0.96);
+}
+
+.btn-accept {
+  background-color: #059669;
+  color: white;
+  box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);
+}
+
+.btn-accept:hover {
+  background-color: #047857;
+}
+
+.btn-reject {
+  background-color: #ef4444;
+  color: white;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.25);
+}
+
+.btn-reject:hover {
+  background-color: #dc2626;
+}
+
+:root {
+  --sat: env(safe-area-inset-top, 0px);
+  --sab: env(safe-area-inset-bottom, 0px);
+  --sal: env(safe-area-inset-left, 0px);
+  --sar: env(safe-area-inset-right, 0px);
+}
+
+.safe-top {
+  padding-top: max(env(safe-area-inset-top), 0.75rem);
+}
+
+.safe-bottom {
+  padding-bottom: max(env(safe-area-inset-bottom), 0.75rem);
+}
+
+.safe-top-header {
+  padding-top: max(env(safe-area-inset-top), 0.625rem);
+}
+
+.safe-bottom-footer {
+  padding-bottom: max(env(safe-area-inset-bottom), 0.625rem);
+}
+
+.font-serif {
+  font-family: 'Amiri', 'Traditional Arabic', serif;
+}
+
+.font-sans {
+  font-family: 'Tajawal', 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* منع اهتزاز وتكبير النافذة المنبثقة عند ظهور الكيبورد في الجوال */
+.modal-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-height: 85vh;
+  overflow-y: auto;
+  /* منع تأثير تكبير الشاشة الفجائي */
+  transform: translateZ(0);
+}
+
+
